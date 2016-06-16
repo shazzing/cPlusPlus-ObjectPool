@@ -110,7 +110,7 @@ public:
         {
             OBJECT* tmp = new (m_objPool.back().get()) OBJECT(args...);
             object = shared_ptr<OBJECT>(tmp,
-                                        [&](auto object) //c++14 construct. Will not work on c++11
+                                        [&](OBJECT* object) // Will also work on c++11(earlier code worked only on c++14)
                                         {
                                             std::unique_lock<std::mutex> lk1(mutex_ObjPool);  // deAlloc functor is not made inline. So make thread safe.
                                             shared_ptr<void> v_ptr = static_cast<shared_ptr<void>>(object);
@@ -122,7 +122,7 @@ public:
         else
         {
             object = shared_ptr<OBJECT>(new OBJECT(args...),
-                                        [=](auto object)
+                                        [=](OBJECT* object)
                                         {
                                             std::unique_lock<std::mutex> lk1(mutex_ObjPool);
                                             shared_ptr<void> v_ptr = static_cast<shared_ptr<void>>(object);
