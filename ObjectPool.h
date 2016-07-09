@@ -1,18 +1,11 @@
-//
-//  ObjectPool.h
-//  ObjPool
-//
-//  Created by shashank hegde on 10/18/15.
-//  Copyright (c) 2015 shashank hegde. All rights reserved.
-//
-
 
 /***********************************************************************
  * Software License Agreement (BSD License)
  *
- * Copyright 2008-2009  Marius Muja (mariusm@cs.ubc.ca). All rights reserved.
- * Copyright 2008-2009  David G. Lowe (lowe@cs.ubc.ca). All rights reserved.
- * Copyright 2011-2016  Jose Luis Blanco (joseluisblancoc@gmail.com).
+ *  ObjectPool.h
+ *  ObjPool
+ *
+ * Copyright 2015 Shashank Hegde (shashank.hegde@icloud.com).
  *   All rights reserved.
  *
  * THE BSD LICENSE

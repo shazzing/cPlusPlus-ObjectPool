@@ -15,9 +15,13 @@ BenchMarks:
 BenchMarks on apple llvm compiler, running on 2.4ghZ macPro
 
 Running BasicTest: Allocation and deAllocation on same thread and single function
-Latency for allocation  are as follows :  max: 144us min: 3us avg: 5us
-Latency for de-allocation  are as follows :  max: 38us min: 0us avg: 0us
+
+Latency for allocation  are as follows :  max: 144us        min: 3us       avg: 5us
+
+Latency for de-allocation  are as follows :  max: 38us      min: 0us        avg: 0us
 
 Test 2: Allocate on one thread and de-allocate on another thread
-Latency for allocation  are as follows :  max: 0us min: 0us avg: 0us
-Latency for de-allocation  are as follows :  max: 7us min: 0us avg: 0us
+
+Latency for allocation  are as follows :  max: 0us      min: 0us        avg: 0us
+
+Latency for de-allocation  are as follows :  max: 7us       min: 0us        avg: 0us
